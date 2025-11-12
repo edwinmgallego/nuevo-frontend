@@ -1,5 +1,5 @@
 // Definimos la URL base de la API
-const API_BASE_URL = "https://backend-mongo-db.netlify.app/api";
+const API_BASE_URL = "https://my-books-mongodb.onrender.com/api";
 
 /**
  * Función 'wrapper' para fetch que añade automáticamente
@@ -8,7 +8,7 @@ const API_BASE_URL = "https://backend-mongo-db.netlify.app/api";
  * @param {object} options - Opciones estándar de fetch (method, body, etc.)
  * @returns {Promise<Response>} La promesa de la respuesta de fetch
  */
-async function fetchApi(endpoint, options = {}) {
+async function fetchApi(endpoint, options = { }) {
   // 1. Crear la URL completa
   const url = `${API_BASE_URL}${endpoint}`;
 
